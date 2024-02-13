@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans&family=Raleway&display=swap");
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400, 700, 800;
+  margin: 80px;
+}
+.grid-container {
+  display: grid;
+  gap: 10px;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  /* text-align: center; */
+  padding: 20px;
+  font-size: 30px;
+}
+
+.item1 {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+  background-image: url(./assets/images/image-web-3-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: none;
+}
+.item2 {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+  color: white;
+  background-color: hsl(240, 100%, 5%);
+}
+.child {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  padding: 10px;
+}
+.child h1 {
+  color: rgba(159, 146, 146, 0.796);
+}
+#card-1 {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 15px;
+}
+#card-2 {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 15px;
+}
+#card-2 h2 {
+  color: hsl(5, 85%, 63%);
+}
+#card-3 {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 15px;
+}
+p {
+  font-size: 15px;
+}
+h2 {
+  font-size: 20px;
+}
+h1 {
+  font-size: 25px;
+}
+.item2 h1 {
+  color: hsl(35, 77%, 62%);
+}
+.header {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-bottom: 20px;
+}
+.header nav {
+  justify-self: end;
+}
+a {
+  display: inline-block;
+  margin: 10px;
+  text-decoration: none;
+}
+a :hover {
+  background-color: hsl(5, 85%, 63%);
+}
+.item4 button {
+  background-color: hsl(240, 100%, 5%);
+  color: white;
+  padding: 10px 20px;
+  margin-top: 50px;
+}
+.item3 h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 750px) {
+  .grid-container {
+    display: block;
+    gap: 10px;
+    padding: 10px;
+  }
+  .child {
+    display: block;
+    gap: 10px;
+    padding: 10px;
+  }
+}
+.item1 {
+  background-image: url(./assets/images/image-web-3-mobile.jpg);
+  display: block;
+  height: 200px;
+}
+#menu {
+  display: none;
+}
