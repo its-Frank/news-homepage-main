@@ -96,12 +96,23 @@ a :hover {
   font-size: 50px;
   font-weight: bold;
 }
+#links {
+  display: none;
+  grid-template-columns: auto auto;
+  margin-bottom: 20px;
+}
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 450px) {
   .grid-container {
     display: block;
-    gap: 10px;
-    padding: 10px;
+    gap: 5px;
+    padding: 5px;
+  }
+  body {
+    font-family: "Inter", sans-serif;
+    font-weight: 400, 700, 800;
+    margin: 20px;
+    gap: 20px;
   }
   .child {
     display: block;
@@ -115,5 +126,25 @@ a :hover {
   height: 200px;
 }
 #menu {
-  display: none;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-self: end;
+  margin-top: 15px;
+}
+.item4 button {
+  background-color: hsl(5, 85%, 63%);
+  color: white;
+  padding: 10px 40px;
+  margin-top: 10px;
+}
+.item3 h1 {
+  margin-bottom: -40px;
+  margin-top: -10px;
+}
+.item4 p {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+#card-2 h2 {
+  color: hsl(240, 100%, 5%);
 }
